@@ -64,15 +64,12 @@ def assignScores(content):
     return scores
     
 def sortWordsByScore(scores): #swap sort
-    index = 1
-    output=[]
     for minIndex in range(len(scores)):
         indexMax = minIndex
         for index in range(minIndex,len(scores)):
             if scores[indexMax][1]<scores[index][1]:
                 scores[index],scores[indexMax]=scores[indexMax],scores[index] 
-        output.append(scores[indexMax])
-    return output
+    return scores
 
 def creatOutputFile(sortedWords):
     file = open("output.txt",'a')
