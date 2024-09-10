@@ -1,13 +1,10 @@
 def main():
-    
     tileColors=["violet", "orange", "jaune", "vert", "rose", "bleu"]
     fileName  = 'input.txt'
     content = readFile(fileName)
     distance = computeTotalDistance(content=content)
     color = computeColor(distance,tileColors)
     writeOutput(color)
-
-
 
 def readFile(fileName):
     file = open (fileName)
