@@ -1,8 +1,8 @@
 def main():
-    l = [5,4,1,6,3,2]
-    print(f"unsorted: {l}")
+    l = [5,4,1,5,6,3,2]
+    print(l)
     sortedL = tri_selection(l)
-    print(f"sorted:   {sortedL}")
+    print(sortedL)
 
 # def selectSort(l):
 #     if len(l)>1:
