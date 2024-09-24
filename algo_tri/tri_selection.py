@@ -1,7 +1,7 @@
 def main():
     l = [5,4,1,5,6,3,2]
     print(l)
-    sortedL = tri_selection(l)
+    sortedL = triSelection(l)
     print(sortedL)
 
 # def selectSort(l):
@@ -20,7 +20,7 @@ def indiceMin(tab, j):
             indice_Min = indice
     return indice_Min
 
-def tri_selection(tab):
+def triSelection(tab):
     for indice in range (len(tab)):
         indice_Min = indiceMin(tab,indice)
         tab[indice], tab[indice_Min] = tab[indice_Min], tab[indice]
