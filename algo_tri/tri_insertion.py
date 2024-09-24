@@ -13,10 +13,9 @@ def triInsertion(tab):
                 if tab[index]<tab[index-1]:
                     tab[index], tab[index-1] = tab[index-1], tab[index]
                     # print(tab)
+                else:
+                    inserted = True
                 index -= 1
-            
-
-
     return tab
 
 
