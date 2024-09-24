@@ -2,7 +2,7 @@ import time
 def main():
     path = "input.txt"
     visual = True
-    displaySpeed = 0.2
+    displaySpeed = 1
     nbRectangles, rectangles = readFile(path)
     setOfCells = set()
     setupBoard(nbRectangles,rectangles,setOfCells)

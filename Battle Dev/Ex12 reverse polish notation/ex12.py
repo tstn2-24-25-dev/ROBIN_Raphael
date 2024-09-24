@@ -32,6 +32,7 @@ def rpn(rpnlist:list,index:int=0) -> tuple[list,int]:
         left,index = rpn(rpnlist,index+1)
         right,index = rpn(rpnlist,index+1)
         return left + right,index
+
     elif rpnlist[index]=='-':
         left,index = rpn(rpnlist,index+1)
         right,index = rpn(rpnlist,index+1)
@@ -44,17 +45,6 @@ def rpn(rpnlist:list,index:int=0) -> tuple[list,int]:
         left,index = rpn(rpnlist,index+1)
         right,index = rpn(rpnlist,index+1)
         return left / right,index
-
-
-
-
-    # elif rpnlist[index]=='-':
-    
-    # elif rpnlist[index]=='*':
-    
-    # elif rpnlist[index]=='/':
-         
-
 
 if __name__=="__main__":
     main()
